@@ -1,12 +1,17 @@
 # MMGT
 This project is dedicated to co-speech gesture video generation.
 
-## Demo Videos
+## Demo (GIFs)
 
-> You can upload MP4s directly to this repo under `demo/` (recommended size < 50 MB), or attach them to a GitHub Release and use the release URLs below.
-
-- **Single Image + Audio (short)**
-  - [MP4 (repo)](./demo/pats.gif) · [MP4 (release)](./demo/oliver#103842_slice18.gif) · [MP4 (repo)](./demo/099_0BF2Np5J6jY_audio_004.gif) · [MP4 (repo)](./demo/007_j4QlG5jKpio_audio_007.gif) 
+<p align="center">
+  <img src="./demo/007_j4QlG5jKpio_audio_007.gif" width="45%" />
+  <img src="./demo/099_0BF2Np5J6jY_audio_004.gif" width="45%" />
+</p>
+<p align="center">
+  <!-- 注意：文件名中的 # 需要写成 %23 -->
+  <img src="./demo/oliver%23103842_slice18.gif" width="45%" />
+  <img src="./demo/pats.gif" width="45%" />
+</p>
 
 ## News
 - **2025-09-01**: Our paper **“MMGT: Motion Mask Guided Two-Stage Network for Co-Speech Gesture Video Generation”** has been **accepted** to **IEEE Transactions on Circuits and Systems for Video Technology (TCSVT)**, 2025.  
