@@ -1,6 +1,12 @@
 # MMGT
-Co-Speech Gesture Video Generation aims to generate vivid speech videos from audio-driven still images, which is challenging due to the diversity of body parts in terms of motion amplitude, audio relevance, and detailed features. Relying solely on audio as the control signal often fails to capture large gesture movements in videos, resulting in more noticeable artifacts and distortions. Existing approaches typically address this issue by adding extra prior inputs, but this can limit the practical application of the task. Specifically, we propose a Motion Mask-Guided Two-Stage Network (MMGT) that uses audio, along with motion masks and pose videos generated from the audio signal, to jointly generate synchronized speech gesture videos. In the first stage, the Spatial Mask-Guided Audio2Pose Generation (SMGA) Network generates high-quality pose videos and motion masks from audio, effectively capturing large movements in key regions such as the face and gestures. In the second stage, we integrate Motion Masked Hierarchical Audio Attention (MM-HAA) into the Stabilized Diffusion Video Generation model, addressing limitations in fine-grained motion generation and region-specific detail control found in traditional methods. This ensures high-quality, detailed upper-body videos with accurate textures and motion. Evaluations demonstrate improvements in video quality, lip-sync, and hand gestures. 
 
+## Overview
+
+**Co-speech gesture video generation** aims to synthesize talking videos from an audio-driven still image. Purely audio-controlled methods often miss large body/hand motions and introduce artifacts. **MMGT** tackles this with a **two-stage** design:  
+1) **SMGA** (Spatial Mask-Guided Audio2Pose) converts audio into high-quality **pose videos** and **motion masks**, capturing large movements in key regions (face, hands, upper body).  
+2) A stabilized diffusion video model with **MM-HAA** (Motion-Masked Hierarchical Audio Attention) uses these signals to generate synchronized, detail-controlled videos.
+
+This yields sharper textures, better lip-sync, and more natural hand/upper-body motion without requiring heavy extra priors.
 ## Demo (GIFs)
 
 <table>
