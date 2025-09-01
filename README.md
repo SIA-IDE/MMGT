@@ -1,28 +1,38 @@
-### Release Plan (Mid-September 2025) — Checklist ✅ (Tokyo time)
+# MMGT
+This project is dedicated to co-speech gesture video generation.
 
-- **Sep 1–3 — Repo Prep & Demo** 🔧🎬  
-  - [ ] Finalize repo structure, license, and env files (`requirements.txt` / `environment.yml`)  
-  - [ ] Record short **video demo** (single image + audio), export **MP4 + GIF**, fixed seed  
-  - [ ] Add `demo/` assets and one-click script `demo.sh`
+## News
+- **2025-09-01**: Our paper **“MMGT: Motion Mask Guided Two-Stage Network for Co-Speech Gesture Video Generation”** has been **accepted** to **IEEE Transactions on Circuits and Systems for Video Technology (TCSVT)**, 2025.  
+  DOI: **10.1109/TCSVT.2025.3604109**
 
-- **Sep 4–7 — Inference Code (incl. long-video)** ⚙️🎞️  
-  - [ ] Release `infer.py` with `--image_path` and `--audio_path` + sample assets  
-  - [ ] Add **Quickstart** in README with reproducible command  
-  - [ ] Implement **long-video** pipeline (chunking + smoothing) in `long_infer.py`  
-  - [ ] Smoke test on two envs (CUDA 11/12), document **known issues**
+## Release Plan (Mid-September 2025)
+We will open-source in mid-September focusing on **four deliverables**:
 
-- **Sep 8–11 — Training Code** 🏋️  
-  - [ ] Ship minimal reproducible training pipeline: `train.py` + `configs/minimal.yaml`  
-  - [ ] Provide small dataset **recipe**, logging, and **intermediate checkpoints**  
-  - [ ] Define checkpoint I/O (naming, **SHA256**, simple **download script**)
+1) **Video Demo**  
+2) **Inference Code** *(including long-video support)*  
+3) **Training Code**  
+4) **Multi-person & Multi-scene Weights**
 
-- **Sep 12–14 — Multi-person & Multi-scene Weights** 🧑‍🤝‍🧑🌆  
-  - [ ] Train/curate generalized weights; validate on **2–3 scenarios**  
-  - [ ] Publish `weights.md` with **links + checksums** and applicability notes  
-  - [ ] Final docs polish; tag **Release Candidate (RC)**
+### Timeline (Tokyo time)
+- **Sep 1–3** — *Repo prep & Demo*  
+  - Finalize repo structure, license, and minimal environment files.  
+  - Record a short demo (single image + audio), fix seed, export MP4/GIF.
 
-- **Sep 15 — Public Release** 🚀  
-  - [ ] Open repository; publish **demo videos**  
-  - [ ] Post **changelog** and simple **upgrade path**
+- **Sep 4–7** — *Inference Code (incl. long-video)*  
+  - Ship `infer.py` with `--image_path --audio_path` and sample assets.  
+  - Add long-video pipeline (chunking + smoothing), and a quickstart script.
 
-> Scope focus: **4 deliverables** — ① Video Demo ② Inference Code (with long-video) ③ Training Code ④ Multi-person & Multi-scene Weights
+- **Sep 8–11** — *Training Code*  
+  - Release a minimal, reproducible training pipeline with configs and a small example dataset recipe.  
+  - Define checkpoint I/O (naming, hashes).
+
+- **Sep 12–14** — *Multi-person & Multi-scene Weights*  
+  - Train/curate and validate generalized weights.  
+  - Publish `weights.md` with download links and checksums. Final doc polish & RC tag.
+
+- **Sep 15** — *Public Release*  
+  - Open the repository, publish demo videos, and post a changelog.
+
+<a href="./pipline_1.png">
+  <img src="./pipline_1.png" alt="pipeline overview" width="900px">
+</a>
