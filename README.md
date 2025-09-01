@@ -2,16 +2,14 @@
 This project is dedicated to co-speech gesture video generation.
 
 ## Demo (GIFs)
-
-<p align="center">
-  <img src="./demo/007_j4QlG5jKpio_audio_007.gif" width="30%" />
-  <img src="./demo/099_0BF2Np5J6jY_audio_004.gif" width="30%" />
-</p>
 <p align="center">
   <img src="./demo/oliver%23103842_slice18.gif" width="30%" />
   <img src="./demo/pats.gif" width="30%" />
 </p>
-
+<p align="center">
+  <img src="./demo/007_j4QlG5jKpio_audio_007.gif" width="30%" />
+  <img src="./demo/099_0BF2Np5J6jY_audio_004.gif" width="30%" />
+</p>
 ## News
 - **2025-09-01**: Our paper **“MMGT: Motion Mask Guided Two-Stage Network for Co-Speech Gesture Video Generation”** has been **accepted** to **IEEE Transactions on Circuits and Systems for Video Technology (TCSVT)**, 2025.  
   DOI: **10.1109/TCSVT.2025.3604109**
