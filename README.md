@@ -4,6 +4,10 @@ This project is dedicated to co-speech gesture video generation.
 ## News
 - **2025-09-01**: Our paper **“MMGT: Motion Mask Guided Two-Stage Network for Co-Speech Gesture Video Generation”** has been **accepted** to **IEEE Transactions on Circuits and Systems for Video Technology (TCSVT)**, 2025.  
   DOI: **10.1109/TCSVT.2025.3604109**
+  
+<a href="./pipline_1.png">
+  <img src="./pipline_1.png" alt="pipeline overview" width="900px">
+</a>
 
 ## Release Plan (Mid-September 2025)
 We will open-source in mid-September focusing on **four deliverables**:
@@ -33,6 +37,22 @@ We will open-source in mid-September focusing on **four deliverables**:
 - **Sep 15** — *Public Release*  
   - Open the repository, publish demo videos, and post a changelog.
 
-<a href="./pipline_1.png">
-  <img src="./pipline_1.png" alt="pipeline overview" width="900px">
-</a>
+
+
+## Citation
+
+If you find **MMGT** useful, please cite our TCSVT 2025 paper:
+
+### BibTeX
+```bibtex
+@ARTICLE{11145152,
+  author  = {Wang, Siyuan and Liu, Jiawei and Wang, Wei and Jin, Yeying and Du, Jinsong and Han, Zhi},
+  journal = {IEEE Transactions on Circuits and Systems for Video Technology},
+  title   = {MMGT: Motion Mask Guided Two-Stage Network for Co-Speech Gesture Video Generation},
+  year    = {2025},
+  volume  = {},
+  number  = {},
+  pages   = {1-1},
+  keywords= {Videos;Faces;Synchronization;Hands;Lips;Training;Electronic mail;Distortion;Data mining;Circuits and systems;Spatial Mask Guided Audio2Pose Generation Network (SMGA);Co-speech Video Generation;Motion Masked Hierarchical Audio Attention (MM-HAA)},
+  doi     = {10.1109/TCSVT.2025.3604109}
+}
