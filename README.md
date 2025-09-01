@@ -1,5 +1,9 @@
 # MMGT
 
+<a href="./pipline_1.png">
+  <img src="./demo/pipline_1.png" alt="pipeline overview" width="900px">
+</a>
+
 ## Overview
 
 **Co-speech gesture video generation** aims to synthesize talking videos from an audio-driven still image. Purely audio-controlled methods often miss large body/hand motions and introduce artifacts. **MMGT** tackles this with a **two-stage** design:  
@@ -24,10 +28,6 @@ This yields sharper textures, better lip-sync, and more natural hand/upper-body 
 ## News
 - **2025-09-01**: Our paper **“MMGT: Motion Mask Guided Two-Stage Network for Co-Speech Gesture Video Generation”** has been **accepted** to **IEEE Transactions on Circuits and Systems for Video Technology (TCSVT)**, 2025.  
   DOI: **10.1109/TCSVT.2025.3604109**
-  
-<a href="./pipline_1.png">
-  <img src="./demo/pipline_1.png" alt="pipeline overview" width="900px">
-</a>
 
 ## Release Plan (Mid-September 2025)
 We will open-source in mid-September focusing on **four deliverables**:
