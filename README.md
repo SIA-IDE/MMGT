@@ -4,6 +4,7 @@
 <a href="./pipline_1.png">
   <img src="./demo/pipline_1.png" alt="pipeline overview" width="900px">
 </a>
+
 **Co-speech gesture video generation** aims to synthesize talking videos from an audio-driven still image. Purely audio-controlled methods often miss large body/hand motions and introduce artifacts. **MMGT** tackles this with a **two-stage** design:  
 1) **SMGA** (Spatial Mask-Guided Audio2Pose) converts audio into high-quality **pose videos** and **motion masks**, capturing large movements in key regions (face, hands, upper body).  
 2) A stabilized diffusion video model with **MM-HAA** (Motion-Masked Hierarchical Audio Attention) uses these signals to generate synchronized, detail-controlled videos.
