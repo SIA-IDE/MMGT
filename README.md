@@ -6,14 +6,14 @@ This project is dedicated to co-speech gesture video generation.
 > You can upload MP4s directly to this repo under `demo/` (recommended size < 50 MB), or attach them to a GitHub Release and use the release URLs below.
 
 - **Single Image + Audio (short)**
-  - [MP4 (repo)](./demo/single_image_audio.mp4) · [MP4 (release)](https://github.com/<OWNER>/<REPO>/releases/download/v0.1.0/single_image_audio.mp4)
+  - [MP4 (repo)](./demo/pats.gif) · [MP4 (release)](./demo/oliver#103842_slice18.gif) · [MP4 (repo)](./demo/099_0BF2Np5J6jY_audio_004.gif) · [MP4 (repo)](./demo/007_j4QlG5jKpio_audio_007.gif) 
 
 ## News
 - **2025-09-01**: Our paper **“MMGT: Motion Mask Guided Two-Stage Network for Co-Speech Gesture Video Generation”** has been **accepted** to **IEEE Transactions on Circuits and Systems for Video Technology (TCSVT)**, 2025.  
   DOI: **10.1109/TCSVT.2025.3604109**
   
 <a href="./pipline_1.png">
-  <img src="./pipline_1.png" alt="pipeline overview" width="900px">
+  <img src="./demo/pipline_1.png" alt="pipeline overview" width="900px">
 </a>
 
 ## Release Plan (Mid-September 2025)
