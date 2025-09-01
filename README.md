@@ -1,4 +1,4 @@
-# MMGT
+# MMGT: Motion Mask Guided Two-Stage Network for Co-Speech Gesture Video Generation
 
 <a href="./pipline_1.png">
   <img src="./demo/pipline_1.png" alt="pipeline overview" width="900px">
