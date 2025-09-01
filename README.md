@@ -5,13 +5,13 @@ This project is dedicated to co-speech gesture video generation.
 
 <table>
   <tr>
-    <td><img src="./demo/007_j4QlG5jKpio_audio_007.gif" width="48%"></td>
-    <td><img src="./demo/099_0BF2Np5J6jY_audio_004.gif" width="48%"></td>
+    <td><img src="./demo/007_j4QlG5jKpio_audio_007.gif" width="100%"></td>
+    <td><img src="./demo/099_0BF2Np5J6jY_audio_004.gif" width="100%"></td>
   </tr>
   <tr>
     <!-- 注意：# → %23 -->
-    <td><img src="./demo/oliver%23103842_slice18.gif" width="48%"></td>
-    <td><img src="./demo/pats.gif" width="48%"></td>
+    <td><img src="./demo/oliver%23103842_slice18.gif" width="100%"></td>
+    <td><img src="./demo/pats.gif" width="100%"></td>
   </tr>
 </table>
 
