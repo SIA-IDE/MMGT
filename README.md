@@ -41,9 +41,9 @@ We will open-source in mid-September focusing on **four deliverables**:
   - Ship `infer.py` with `--image_path --audio_path` and sample assets.
 - **Sep 8–10** — *Data preprocessing*
 
-- **Sep 10–15** — *Training Code*  
+- **Sep 11–15** — *Training Code*  
 
-- **Sep 15–20** — *Multi-person & Multi-scene Weights*  
+- **Sep 16–20** — *Multi-person & Multi-scene Weights*  
    
 
 
