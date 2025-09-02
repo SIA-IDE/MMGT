@@ -22,7 +22,7 @@ from src.dataset.audio_processor import AudioProcessor
 from src.dataset.image_processor import ImageProcessor
 from src.models.audio_proj import AudioProjModel
 from scipy.interpolate import CubicSpline
-from LMDM import LMDM
+from SMGA import SMGA
 # from args_inference import parse_test_args
 from data.slice import slice_audio
 from data.audio_extraction.baseline_features import extract as baseline_extract
@@ -196,7 +196,7 @@ def main(args: argparse.Namespace):
         config.pretrained_vae_path,
     ).to("cuda", dtype=weight_dtype)
 
-    audio2pose_model = LMDM(args.feature_type, args.motion_diffusion_ckpt)  # 模型初始化
+    audio2pose_model = SMGA(args.feature_type, args.motion_diffusion_ckpt)  # 模型初始化
     audio2pose_model.eval()
     wavlm_model, wavlm_cfg = wavlm_init()
     reference_unet = UNet2DConditionModel.from_pretrained(
