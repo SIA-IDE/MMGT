@@ -37,22 +37,14 @@ We will open-source in mid-September focusing on **four deliverables**:
 - **Sep 1–3** — *Repo prep & Demo*  
   - Finalize repo structure, license, and minimal environment files.  
   - Record a short demo (single image + audio), fix seed, export MP4/GIF.
+- **Sep 4–7** — *Inference Code*  
+  - Ship `infer.py` with `--image_path --audio_path` and sample assets.
+- **Sep 8–10** — *Data preprocessing*
 
-- **Sep 4–7** — *Inference Code (incl. long-video)*  
-  - Ship `infer.py` with `--image_path --audio_path` and sample assets.  
-  - Add long-video pipeline (chunking + smoothing), and a quickstart script.
+- **Sep 10–15** — *Training Code*  
 
-- **Sep 8–11** — *Training Code*  
-  - Release a minimal, reproducible training pipeline with configs and a small example dataset recipe.  
-  - Define checkpoint I/O (naming, hashes).
-
-- **Sep 12–14** — *Multi-person & Multi-scene Weights*  
-  - Train/curate and validate generalized weights.  
-  - Publish `weights.md` with download links and checksums. Final doc polish & RC tag.
-
-- **Sep 15** — *Public Release*  
-  - Open the repository, publish demo videos, and post a changelog.
-
+- **Sep 15–20** — *Multi-person & Multi-scene Weights*  
+   
 
 
 ## Citation
