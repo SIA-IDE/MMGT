@@ -22,7 +22,7 @@ from src.dataset.audio_processor import AudioProcessor
 from src.dataset.image_processor import ImageProcessor
 from src.models.audio_proj import AudioProjModel
 from scipy.interpolate import CubicSpline
-from SMGA import SMGA
+from src.audio2pose_model.SMGA import SMGA
 # from args_inference import parse_test_args
 from data.slice import slice_audio
 from data.audio_extraction.baseline_features import extract as baseline_extract
