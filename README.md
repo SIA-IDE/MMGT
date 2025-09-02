@@ -25,15 +25,15 @@
 - **2025-09-01**: Our paper **“MMGT: Motion Mask Guided Two-Stage Network for Co-Speech Gesture Video Generation”** has been **accepted** to **IEEE Transactions on Circuits and Systems for Video Technology (TCSVT)**, 2025.  
   DOI: **10.1109/TCSVT.2025.3604109**
 
-## Release Plan (Mid-September 2025)
-We will open-source in mid-September focusing on **four deliverables**:
+## Release Plan (September 2025)
+We will open-source in September focusing on **four deliverables**:
 
 1) **Video Demo**  
 2) **Inference Code** *(including long-video support)*  
 3) **Training Code**  
 4) **Multi-person & Multi-scene Weights**
 
-### Timeline (Tokyo time)
+### Timeline
 - **Sep 1–3** — *Repo prep & Demo*  
   - Finalize repo structure, license, and minimal environment files.  
   - Record a short demo (single image + audio), fix seed, export MP4/GIF.
@@ -44,8 +44,55 @@ We will open-source in mid-September focusing on **four deliverables**:
 - **Sep 11–15** — *Training Code*  
 
 - **Sep 16–20** — *Multi-person & Multi-scene Weights*  
-   
 
+### Environment
+We recommend a python version ```>=3.10``` and cuda version ```=12.4```. It's possible to have other compatible version.
+
+
+```bash
+conda create -n MMGT python=3.10
+conda activate MMGT
+pip install -r requirements.txt
+```
+
+### Inferences for MMGT (TODO)
+<!-- Our current reasoning only supports video lengths of 3.2 seconds.
+#### Download pre-trained weights
+
+
+#### Audio2Videos
+
+```bash
+python scripts/audio2vid_single.py \
+  -c ./configs/prompts/animation.yaml \
+  --image_path /path/to/your/image.png \
+  --audio_path /path/to/your/audio.wav \
+  --out_dir /path/to/output_dir
+```
+
+#### Pose2videos
+
+```bash
+python scripts/pose2vid.py \
+  -c ./configs/prompts/animation.yaml \
+  --image_path /path/to/img.png \
+  --pose_path /path/to/pose.mp4 \
+  --face_mask_path /path/to/face.mp4 \
+  --lips_mask_path /path/to/lips.mp4 \
+  --hands_mask_path /path/to/hands.mp4 \
+  --out_dir ./outputs
+```
+
+
+### Data Preparation
+
+#### Data Download
+
+#### Data preprocessing
+
+
+
+### Train for MMGT -->
 
 ## Citation
 

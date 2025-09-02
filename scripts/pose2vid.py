@@ -20,7 +20,6 @@ from src.dataset.audio_processor import AudioProcessor
 from src.dataset.image_processor import ImageProcessor
 from src.models.audio_proj import AudioProjModel
 from torch import nn
-from configs.prompts.test_cases import TestCasesDict
 from src.models.pose_guider import PoseGuider
 from src.models.unet_2d_condition import UNet2DConditionModel
 from src.models.unet_3d import UNet3DConditionModel

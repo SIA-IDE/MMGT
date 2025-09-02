@@ -30,7 +30,6 @@ from data.audio_extraction.wavlm_features import wavlm_init
 from data.audio_extraction.wavlm_features import extract_wo_init as wavlm_extract
 from data.extract_movment_mask_all import (process_reference_image, pose_vid_generator, mask_leg)
 from torch import nn
-from configs.prompts.test_cases import TestCasesDict
 from src.models.pose_guider import PoseGuider
 from src.models.unet_2d_condition import UNet2DConditionModel
 from src.models.unet_3d import UNet3DConditionModel
