@@ -56,8 +56,9 @@ pip install -r requirements.txt
 ```
 
 ### Inferences for MMGT (TODO)
-<!-- Our current reasoning only supports video lengths of 3.2 seconds.
+Our current reasoning only supports video lengths of 3.2 seconds.
 #### Download pre-trained weights
+
 
 
 #### Audio2Videos
@@ -92,7 +93,7 @@ python scripts/pose2vid.py \
 
 
 
-### Train for MMGT -->
+### Train for MMGT 
 
 ## Citation
 
