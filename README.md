@@ -57,8 +57,9 @@ pip install -r requirements.txt
 
 ### Inferences for MMGT (TODO)
 Our current reasoning only supports video lengths of 3.2 seconds.
-#### Download pre-trained weights
+#### Download pre-trained weights 
 
+From https://huggingface.co/addtime/MMGT_pretrained/tree/main
 
 
 #### Audio2Videos
