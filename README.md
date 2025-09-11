@@ -98,11 +98,9 @@ python scripts/pose2vid.py \
 
 
 
-<<<<<<< HEAD
 ### Train for MMGT 
-=======
+
 ### Train for MMGT
->>>>>>> fix_bug
 
 ## Citation
 
