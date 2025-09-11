@@ -1,10 +1,10 @@
 pretrained_base_model_path: "./pretrained_weights/stable-diffusion-v1-5/"
 pretrained_vae_path: "./pretrained_weights/sd-vae-ft-mse"
 image_encoder_path: "pretrained_weights/sd-image-variations-diffusers/image_encoder"
-denoising_unet_path: "./xxxx/denoising_unet-29580.pth"
-reference_unet_path: "./xxxx/reference_unet-29580.pth"
-pose_guider_path: "./xxxx/pose_guider-29580.pth"
-motion_module_path: "./xxxx/stage2"
+denoising_unet_path: "./pretrained_weights/MMGT_pretrained/stage_2/process_1/denoising_unet-29580.pth"
+reference_unet_path: "./pretrained_weights/MMGT_pretrained/stage_2/process_1/reference_unet-29580.pth"
+pose_guider_path: "./pretrained_weights/MMGT_pretrained/stage_2/process_1/pose_guider-29580.pth"
+motion_module_path: "./pretrained_weights/MMGT_pretrained/stage_2/process_2/net-32500.pth"
 
 inference_config: "./configs/inference/inference_v2.yaml"
 

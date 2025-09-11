@@ -57,15 +57,19 @@ pip install -r requirements.txt
 
 ### Inferences for MMGT (TODO)
 Our current reasoning only supports video lengths of 3.2 seconds.
+<<<<<<< HEAD
 #### Download pre-trained weights 
 
 From https://huggingface.co/addtime/MMGT_pretrained/tree/main
+=======
+#### Download pre-trained weights
+>>>>>>> fix_bug
 
 
 #### Audio2Videos
 
 ```bash
-python scripts/audio2vid_single.py \
+python scripts/audio2vid.py \
   -c ./configs/prompts/animation.yaml \
   --image_path /path/to/your/image.png \
   --audio_path /path/to/your/audio.wav \
@@ -94,7 +98,11 @@ python scripts/pose2vid.py \
 
 
 
+<<<<<<< HEAD
 ### Train for MMGT 
+=======
+### Train for MMGT
+>>>>>>> fix_bug
 
 ## Citation
 

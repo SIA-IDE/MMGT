@@ -525,7 +525,7 @@ if __name__ == "__main__":
     parser.add_argument("--use_motion_selection", default=False, action='store_true', help="use motion selection")
     parser.add_argument("--num_epoch", type=int, default=3400)
     parser.add_argument("--feature_type", type=str, default="wavlm", help="'baseline' or 'wavlm'")
-    parser.add_argument("--motion_diffusion_ckpt", type=str, default="/root/node03-nfs/aaai/audio2dwpose/ablation_loss_1_3/train/head_loss/weights/train-3000.pt",
+    parser.add_argument("--motion_diffusion_ckpt", type=str, default="./pretrained_weights/MMGT_pretrained/stage_1/audio2pose_best_model.pt",
                         help="motion diffusion checkpoint")
     args = parser.parse_args()
     main(args)
