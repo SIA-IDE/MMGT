@@ -5,7 +5,7 @@ data:
   meta_paths:
     - "./data/prmariy/anyone_meta_PATS.json"
   # Margin of frame indexes between ref and tgt images
-  sample_margin: 24  
+  sample_margin: 25
 
 solver:
   gradient_accumulation_steps: 1
