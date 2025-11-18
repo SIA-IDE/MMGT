@@ -1,3 +1,4 @@
+<div align="center">
 ## <b>MMGT</b>: Motion Mask Guided Two-Stage Network for Co-Speech Gesture Video Generation  
 (IEEE TCSVT 2025)
 
@@ -5,15 +6,15 @@
 
 [Paper (TCSVT 2025)](https://doi.org/10.1109/TCSVT.2025.3604109)
 
-</div>
-
----
-
 ## Overview
 
 <a href="./pipline_1.png">
   <img src="./demo/pipline_1.png" alt="MMGT Pipeline Overview" width="900px">
 </a>
+
+</div>
+
+---
 
 **Co-speech gesture video generation** aims to synthesize expressive talking videos from a still portrait and a speech audio track. However, purely audio-controlled methods often:
 
