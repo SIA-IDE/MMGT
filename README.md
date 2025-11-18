@@ -84,9 +84,7 @@ We recommend the following setup:
 conda create -n MMGT python=3.10
 conda activate MMGT
 pip install -r requirements.txt
-````
-
----
+```
 
 ## Checkpoints
 
