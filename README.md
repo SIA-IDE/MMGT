@@ -1,4 +1,5 @@
 <div align="center">
+
 ## <b>MMGT</b>: Motion Mask Guided Two-Stage Network for Co-Speech Gesture Video Generation  
 (IEEE TCSVT 2025)
 
