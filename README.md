@@ -130,17 +130,89 @@ python scripts/pose2vid.py \
 
 ## Training
 
-### Data Preparation, Download, and Preprocessing
+### data Preparation, Download, and Preprocessing
 
 For detailed data preparation (including dataset structure, preprocessing scripts, and examples), please refer to the data pipeline of:
 
 > [https://github.com/thuhcsi/S2G-MDDiffusion#-data-preparation](https://github.com/thuhcsi/S2G-MDDiffusion#-data-preparation)
 
-Follow those instructions to:
+#### Next, run the following processing code:
 
-1. Download the required datasets
-2. Extract pose sequences and motion-related signals
-3. Format them to match MMGT’s training configs in `./configs/train/`
+```bash
+
+python -m scripts.data_preprocess --input_dir "Path to the 512×512 training or test video files processed according to the above procedure"
+python data/extract_movment_mask_all.py --input_root "Path to the 512×512 training or test video files processed according to the above procedure"
+
+```
+
+#### dataSET FOR TRAIN PROCESS ONE
+
+##### Extract DWpose npy from the videos
+
+```bash
+  |-- data/train/
+    |-- keypoints/
+    |   |-- 0001.npy
+    |   |-- 0002.npy 
+    |   |-- 0003.npy
+    |   `-- 0004.npy
+    |-- audios/
+    |   |-- 0001.wav
+    |   |-- 0002.wav
+    |   |-- 0003.wav
+    |   `-- 0004.wav
+
+```
+
+```bash
+cd data
+python create_dataset.py --extract-baseline --extract-wavlm
+cd ..
+```
+
+#### dataSET FOR TRAIN PROCESS TWO
+
+```bash
+    |--- data/train/
+    |    |--- videos
+    |    |    |--- chemistry#99999.mp4
+    |    |    |--- oliver#88888.mp4
+    |    |--- audios
+    |    |    |--- chemistry#99999.wav
+    |    |    |--- oliver#88888.wav
+```
+
+
+
+#### The final training data structure is:
+
+```bash
+    |--- data/train/
+    |    |--- videos
+    |    |    |--- chemistry#99999.mp4
+    |    |    |--- oliver#88888.mp4
+    |    |--- audios
+    |    |    |--- chemistry#99999.wav
+    |    |    |--- oliver#88888.wav
+    |    |--- sep_lips_mask
+    |    |    |--- chemistry#99999.mp4
+    |    |    |--- oliver#88888.mp4
+    |    |--- sep_face_mask
+    |    |    |--- chemistry#99999.mp4
+    |    |    |--- oliver#88888.mp4
+    |    |--- videos_dwpose
+    |    |    |--- chemistry#99999.mp4
+    |    |    |--- oliver#88888.mp4
+    |    |--- audio_emb
+    |    |    |--- chemistry#99999.pt
+    |    |    |--- oliver#88888.pt
+```
+#### Import the above dataset paths into a .json file for easy code access.
+
+```bash
+python scripts/extract_meta_info_stage1.py -r data/videos -n data
+python tool/extract_meta_info_stage2_move_mask.py --root_path data/train --dataset_name my_dataset --meta_info_name data
+```
 
 ---
 
@@ -193,10 +265,7 @@ If you find **MMGT** useful in your research, please consider citing our TCSVT 2
   volume  = {},
   number  = {},
   pages   = {1-1},
-  keywords= {Videos;Faces;Synchronization;Hands;Lips;Training;Electronic mail;Distortion;Data mining;Circuits and systems;Spatial Mask Guided Audio2Pose Generation Network (SMGA);Co-speech Video Generation;Motion Masked Hierarchical Audio Attention (MM-HAA)},
+  keywords= {Videos;Faces;Synchronization;Hands;Lips;Training;Electronic mail;Distortion;data mining;Circuits and systems;Spatial Mask Guided Audio2Pose Generation Network (SMGA);Co-speech Video Generation;Motion Masked Hierarchical Audio Attention (MM-HAA)},
   doi     = {10.1109/TCSVT.2025.3604109}
 }
-```
-
-```
 ```
