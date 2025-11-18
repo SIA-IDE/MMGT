@@ -1,13 +1,14 @@
+
 <div align="center">
 
-## <b>MMGT</b>: Motion Mask Guided Two-Stage Network for Co-Speech Gesture Video Generation  
+## <b>MMGT</b>: Motion Mask Guided Two-Stage Network for Co-Speech Gesture Video Generation  🎥🎤  
 (IEEE TCSVT 2025)
 
-**Siyuan Wang**, **Jiawei Liu**, **Wei Wang**, **Yeying Jin**, **Jinsong Du**, **Zhi Han**
+**Siyuan Wang**, **Jiawei Liu**, **Wei Wang**, **Yeying Jin**, **Jinsong Du**, **Zhi Han** ✨
 
-[Paper (TCSVT 2025)](https://doi.org/10.1109/TCSVT.2025.3604109)
+[Paper (TCSVT 2025)](https://doi.org/10.1109/TCSVT.2025.3604109) 📖
 
-## Overview
+## Overview 🧐
 
 <a href="./pipline_1.png">
   <img src="./demo/pipline_1.png" alt="MMGT Pipeline Overview" width="900px">
@@ -17,26 +18,26 @@
 
 ---
 
-**Co-speech gesture video generation** aims to synthesize expressive talking videos from a still portrait and a speech audio track. However, purely audio-controlled methods often:
+**Co-speech gesture video generation** aims to synthesize expressive talking videos from a still portrait and a speech audio track 🎬🎶. However, purely audio-controlled methods often:
 
-- Miss large body and hand motions  
-- Struggle to emphasize key motion regions (face, lips, hands, upper body)  
-- Introduce temporal flickering or visual artifacts  
+- Miss large body and hand motions 🤦‍♂️  
+- Struggle to emphasize key motion regions (face, lips, hands, upper body) 🙄  
+- Introduce temporal flickering or visual artifacts 💥
 
 **MMGT** addresses these issues with a **motion-mask–guided two-stage framework**:
 
-1. **SMGA** – *Spatial Mask-Guided Audio2Pose*  
+1. **SMGA** – *Spatial Mask-Guided Audio2Pose* 🎧➡️💃  
    - Converts audio into high-quality **pose videos**  
-   - Predicts **motion masks** to highlight regions with significant movement (face, lips, hands, upper body)
+   - Predicts **motion masks** to highlight regions with significant movement (face, lips, hands, upper body) 🎯
 
-2. **Diffusion-based Video Generator with MM-HAA** – *Motion-Masked Hierarchical Audio Attention*  
+2. **Diffusion-based Video Generator with MM-HAA** – *Motion-Masked Hierarchical Audio Attention* 🎥  
    - A stabilized diffusion video model  
    - Takes **audio, pose, and motion masks** as input  
-   - Generates temporally stable, lip-synchronized, and detail-controllable gesture videos
+   - Generates temporally stable, lip-synchronized, and detail-controllable gesture videos 🕺
 
 ---
 
-## Demos
+## Demos 🎥👀
 
 <table>
   <tr>
@@ -52,33 +53,33 @@
 
 ---
 
-## News
+## News 📰
 
 - **2025-09-01**: Our paper  
   **“MMGT: Motion Mask Guided Two-Stage Network for Co-Speech Gesture Video Generation”**  
-  has been **accepted** to **IEEE Transactions on Circuits and Systems for Video Technology (TCSVT)**, 2025.  
-  DOI: **10.1109/TCSVT.2025.3604109**
+  has been **accepted** to **IEEE Transactions on Circuits and Systems for Video Technology (TCSVT)**, 2025. 🎉  
+  DOI: **10.1109/TCSVT.2025.3604109** 📚
 
 ---
 
-## Release Plan (September 2025)
+## Release Plan (September 2025) 🗓️
 
 We plan to open-source MMGT around **September 2025**, focusing on the following **four deliverables**:
 
-1. **Video demos**  
-2. **Inference code** *(including long-video support)*  
-3. **Training code**  
-4. **Multi-person & multi-scene model weights**  
+1. **Video demos** 📽️  
+2. **Inference code** *(including long-video support)* 💻  
+3. **Training code** 🛠️  
+4. **Multi-person & multi-scene model weights** 🤖
 
 ---
 
-## Environment
+## Environment ⚙️
 
 We recommend the following setup:
 
-- **Python**: `>= 3.10`  
+- **Python**: `>= 3.10` 🐍  
 - **CUDA**: `= 12.4`  
-  (Other versions may work but are not thoroughly tested.)
+  (Other versions may work but are not thoroughly tested.) 💻
 
 ```bash
 conda create -n MMGT python=3.10
@@ -86,7 +87,7 @@ conda activate MMGT
 pip install -r requirements.txt
 ```
 
-## Checkpoints
+## Checkpoints 🎯
 
 Pre-trained weights are available on HuggingFace:
 
@@ -96,41 +97,30 @@ Download the checkpoints and place them according to the paths specified in the 
 
 ---
 
-## Inference
+## Inference 🔍
 
-> **Note:** The current implementation supports video lengths of **up to 3.2 seconds**.
-> Extended / long-video generation will be released together with the full open-source version.
+> **Note:** The current implementation supports video lengths of **up to 3.2 seconds** ⏱️.  
+> Extended / long-video generation will be released together with the full open-source version 🚀.
 
-### 1. Audio-to-Video (Audio2Videos)
+### 1. Audio-to-Video (Audio2Videos) 🎧➡️🎥
 
 End-to-end generation from **audio + single image**:
 
 ```bash
-python scripts/audio2vid.py \
-  -c ./configs/prompts/animation.yaml \
-  --image_path /path/to/your/image.png \
-  --audio_path /path/to/your/audio.wav \
-  --out_dir /path/to/output_dir
+python scripts/audio2vid.py   -c ./configs/prompts/animation.yaml   --image_path /path/to/your/image.png   --audio_path /path/to/your/audio.wav   --out_dir /path/to/output_dir
 ```
 
-### 2. Pose-to-Video (Pose2Videos)
+### 2. Pose-to-Video (Pose2Videos) 💃➡️🎥
 
 If you already have pose and motion-mask videos (e.g., from Stage 1 or other methods), you can directly drive the video generator:
 
 ```bash
-python scripts/pose2vid.py \
-  -c ./configs/prompts/animation.yaml \
-  --image_path /path/to/img.png \
-  --pose_path /path/to/pose.mp4 \
-  --face_mask_path /path/to/face.mp4 \
-  --lips_mask_path /path/to/lips.mp4 \
-  --hands_mask_path /path/to/hands.mp4 \
-  --out_dir ./outputs
+python scripts/pose2vid.py   -c ./configs/prompts/animation.yaml   --image_path /path/to/img.png   --pose_path /path/to/pose.mp4   --face_mask_path /path/to/face.mp4   --lips_mask_path /path/to/lips.mp4   --hands_mask_path /path/to/hands.mp4   --out_dir ./outputs
 ```
 
 ---
 
-## Training
+## Training 🏋️‍♂️
 
 ### data Preparation, Download, and Preprocessing
 
@@ -184,8 +174,6 @@ cd ..
     |    |    |--- oliver#88888.wav
 ```
 
-
-
 #### The final training data structure is:
 
 ```bash
@@ -227,8 +215,8 @@ accelerate train_a2p.py
 
 This stage learns to map raw speech audio to:
 
-* **Pose sequences**
-* **Region-specific motion masks** (face, lips, hands, upper body)
+* **Pose sequences** 💃  
+* **Region-specific motion masks** (face, lips, hands, upper body) 🦸‍♂️
 
 </details>
 
@@ -246,15 +234,15 @@ accelerate launch train_stage_2.py --config configs/train/stage2.yaml
 
 This stage fine-tunes the diffusion model to:
 
-* Jointly use **audio**, **poses**, and **motion masks**
-* Produce **synchronized**, **artifact-free** gesture videos
-* Emphasize large-motion regions through **Motion-Masked Hierarchical Audio Attention (MM-HAA)**
+* Jointly use **audio**, **poses**, and **motion masks**  
+* Produce **synchronized**, **artifact-free** gesture videos 📽️  
+* Emphasize large-motion regions through **Motion-Masked Hierarchical Audio Attention (MM-HAA)** 🎯
 
 </details>
 
 ---
 
-## Citation
+## Citation 📑
 
 If you find **MMGT** useful in your research, please consider citing our TCSVT 2025 paper:
 
