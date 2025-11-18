@@ -1,5 +1,3 @@
-<div align="center">
-
 ## <b>MMGT</b>: Motion Mask Guided Two-Stage Network for Co-Speech Gesture Video Generation  
 (IEEE TCSVT 2025)
 
@@ -147,10 +145,10 @@ Follow those instructions to:
 ---
 
 <details>
-<summary><strong>Train Stage 1 – SMGA (Audio2Pose + Motion Masks)</strong></summary>
+<summary><strong>Train Process 1 – SMGA (Audio2Pose + Motion Masks)</strong></summary>
 
 ```bash
-accelerate launch train_stage_1.py --config configs/train/stage1.yaml
+accelerate train_a2p.py
 ```
 
 This stage learns to map raw speech audio to:
@@ -163,8 +161,11 @@ This stage learns to map raw speech audio to:
 ---
 
 <details>
-<summary><strong>Train Stage 2 – Diffusion Video Generator (with MM-HAA)</strong></summary>
+<summary><strong>Train Process 2 – Diffusion Video Generator (with MM-HAA)</strong></summary>
 
+```bash
+accelerate launch train_stage_1.py --config configs/train/stage1.yaml
+```
 ```bash
 accelerate launch train_stage_2.py --config configs/train/stage2.yaml
 ```
