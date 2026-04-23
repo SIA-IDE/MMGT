@@ -2,11 +2,11 @@
 <div align="center">
 
 ## <b>MMGT</b>: Motion Mask Guided Two-Stage Network for Co-Speech Gesture Video Generation  🎥🎤  
-(IEEE TCSVT 2025)
+(IEEE TCSVT 2026)
 
 **Siyuan Wang**, **Jiawei Liu**, **Wei Wang**, **Yeying Jin**, **Jinsong Du**, **Zhi Han** ✨
 
-[Paper (TCSVT 2025)](https://doi.org/10.1109/TCSVT.2025.3604109) 📖
+[Paper (TCSVT 2026)](https://doi.org/10.1109/TCSVT.2025.3604109) 📖
 
 ## Overview 🧐
 
@@ -244,18 +244,18 @@ This stage fine-tunes the diffusion model to:
 
 ## Citation 📑
 
-If you find **MMGT** useful in your research, please consider citing our TCSVT 2025 paper:
+If you find **MMGT** useful in your research, please consider citing our TCSVT 2026 paper:
 
 ```bibtex
 @ARTICLE{11145152,
-  author  = {Wang, Siyuan and Liu, Jiawei and Wang, Wei and Jin, Yeying and Du, Jinsong and Han, Zhi},
-  journal = {IEEE Transactions on Circuits and Systems for Video Technology},
-  title   = {MMGT: Motion Mask Guided Two-Stage Network for Co-Speech Gesture Video Generation},
-  year    = {2025},
-  volume  = {},
-  number  = {},
-  pages   = {1-1},
-  keywords= {Videos;Faces;Synchronization;Hands;Lips;Training;Electronic mail;Distortion;data mining;Circuits and systems;Spatial Mask Guided Audio2Pose Generation Network (SMGA);Co-speech Video Generation;Motion Masked Hierarchical Audio Attention (MM-HAA)},
-  doi     = {10.1109/TCSVT.2025.3604109}
-}
+  author={Wang, Siyuan and Liu, Jiawei and Wang, Wei and Jin, Yeying and Du, Jinsong and Han, Zhi},
+  journal={IEEE Transactions on Circuits and Systems for Video Technology}, 
+  title={MMGT: Motion Mask Guided Two-Stage Network for Co-Speech Gesture Video Generation}, 
+  year={2026},
+  volume={36},
+  number={2},
+  pages={1446-1459},
+  keywords={Videos;Faces;Synchronization;Hands;Lips;Training;Electronic mail;Distortion;Data mining;Circuits and systems;Spatial mask guided Audio2Pose generation network (SMGA);co-speech video generation;motion masked hierarchical audio attention (MM-HAA)},
+  doi={10.1109/TCSVT.2025.3604109}}
+
 ```
